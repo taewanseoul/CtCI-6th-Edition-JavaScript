@@ -1,8 +1,7 @@
 function checkPalindromePermutation(string) {
   const trimmedStr = string.replace(' ', '').toLowerCase();
-
   const hashed = {};
-  console.log(trimmedStr);
+
   for (let i = 0; i < trimmedStr.length; i++) {
     const alphabet = trimmedStr[i];
 
@@ -12,8 +11,6 @@ function checkPalindromePermutation(string) {
       hashed[alphabet] = 1;
     }
   }
-
-  console.log(hashed);
 
   let oddCount = 0;
 
